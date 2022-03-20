@@ -7,22 +7,11 @@
     tools:context=".menuAdmin">
 
     <Button
-        android:id="@+id/btnAgregarPaciente"
-        android:layout_width="126dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="39dp"
-        android:backgroundTint="#9F0808"
-        android:text="Insertar paciente"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btnInsertarCama"
         android:layout_width="128dp"
         android:layout_height="85dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#4CAF50"
         android:text="INsertar cama"
         app:layout_constraintStart_toEndOf="@+id/btnAgregarPaciente"
@@ -32,18 +21,18 @@
         android:id="@+id/btnExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
         android:text="salir"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEditarDatos" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarArea" />
 
     <Button
         android:id="@+id/btninsertarEnfermera"
         android:layout_width="134dp"
         android:layout_height="70dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="21dp"
         android:backgroundTint="#1A2FA6"
         android:text="Insertar enfermera"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,8 +42,8 @@
         android:id="@+id/btninsertarHabitacion"
         android:layout_width="138dp"
         android:layout_height="77dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#C3B118"
         android:text="insertar habitacion"
         app:layout_constraintStart_toEndOf="@+id/btninsertarEnfermera"
@@ -65,31 +54,32 @@
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#FF9800"
         android:text="Insertar servicio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btninsertarEnfermera" />
 
     <Button
-        android:id="@+id/btninsertarArea"
+        android:id="@+id/btnAgregarArea"
         android:layout_width="139dp"
         android:layout_height="69dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#2196F3"
         android:text="insertar area"
         app:layout_constraintStart_toEndOf="@+id/btninsertarServicio"
         app:layout_constraintTop_toBottomOf="@+id/btninsertarHabitacion" />
 
     <Button
-        android:id="@+id/btnEditarDatos"
-        android:layout_width="145dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#71664C"
-        android:text="editar datos"
+        android:id="@+id/btnAgregarPaciente"
+        android:layout_width="112dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#E41515"
+        android:text="Insertar paciente"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btninsertarServicio" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

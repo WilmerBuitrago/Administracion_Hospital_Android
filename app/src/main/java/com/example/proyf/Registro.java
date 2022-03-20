@@ -22,7 +22,7 @@ import java.util.Map;
 
 public class Registro extends AppCompatActivity {
 
-    String URL="http://192.168.1.6/hos/registroAdmin.php";
+    String URL="http://192.168.1.3/hos/registroAdmin.php";
 
     EditText edtIdadmin, edtNombre, edtApellido, edtUsuario, edtClave,edtFechaNac,edtDireccion,edtTel,edtRespuesta1,edtRespuesta2;
     Button btnregistrar,btnvolver;

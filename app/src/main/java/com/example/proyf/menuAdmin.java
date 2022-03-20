@@ -9,7 +9,7 @@ import android.widget.Button;
 
 
 public class menuAdmin extends AppCompatActivity {
-    Button btnsalir, btninsertarPaciente,btneditar;
+    Button btnsalir, btninsertarPaciente,btninsertarArea,btninsertarenfermera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,9 @@ public class menuAdmin extends AppCompatActivity {
 
             btnsalir=findViewById(R.id.btnExit);
             btninsertarPaciente=findViewById(R.id.btnAgregarPaciente);
-            btneditar=findViewById(R.id.btnEditarDatos);
+            btninsertarArea=findViewById(R.id.btnAgregarArea);
+            btninsertarenfermera=findViewById(R.id.btninsertarEnfermera);
+
 
         btnsalir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,11 +43,20 @@ public class menuAdmin extends AppCompatActivity {
                 }
             });
 
-               btneditar.setOnClickListener(new View.OnClickListener() {
+               btninsertarArea.setOnClickListener(new View.OnClickListener() {
                    @Override
                    public void onClick(View v) {
-
+                       Intent intent = new Intent(menuAdmin.this, InsertarArea.class);
+                       startActivity(intent);
                        
+                   }
+               });
+
+               btninsertarenfermera.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       Intent intent = new Intent(menuAdmin.this, Insertar_enfermera.class);
+                       startActivity(intent);
                    }
                });
 

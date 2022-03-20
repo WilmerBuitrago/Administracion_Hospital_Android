@@ -84,7 +84,7 @@ public class EditarDatosAdmin extends AppCompatActivity {
         }else if(id==R.id.btn_menu){
             Intent intent = new Intent(EditarDatosAdmin.this, menuAdmin.class);
             startActivity(intent);
-           // GuardarPreferencias();
+            GuardarPreferencias();
         }if(id==R.id.btnSalirEdit){
 
             finish();
@@ -92,7 +92,7 @@ public class EditarDatosAdmin extends AppCompatActivity {
 
 
     }
-
+     // guardo el id del admin
     public void GuardarPreferencias(){
         SharedPreferences preferences= getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
         String id_admin= edtIdadminUpdate.getText().toString();
@@ -110,7 +110,7 @@ public class EditarDatosAdmin extends AppCompatActivity {
     //Funcion de editar
 
     public void editaradmin(String idadmin,String nomadmin, String apadmin,String diradmin,String clavadamin,String fechaadmin, String teladmin){
-        String URL="http://192.168.1.6/hos/EditarAdmin.php";
+        String URL="http://192.168.1.3/hos/EditarAdmin.php";
         StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -154,7 +154,7 @@ public class EditarDatosAdmin extends AppCompatActivity {
 
     //ver cursos
     private void veradmin(){
-        String URL="http://192.168.1.6/hos/MostrarAdmin.php?user="+user;
+        String URL="http://192.168.1.3/hos/MostrarAdmin.php?user="+user;
         JsonObjectRequest jsonObjectRequest= new JsonObjectRequest(
                 Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
             @Override

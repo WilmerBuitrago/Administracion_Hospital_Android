@@ -26,7 +26,7 @@ import android.os.Bundle;
 
 public class Login extends AppCompatActivity {
 
-    String URL ="http://192.168.1.6/hos/login.php";
+    String URL ="http://192.168.100.18/hospital/login.php";
 
     EditText etUsuario, etContrasena;
     Button btnLogin, btnRegistrar,btnForgot;
@@ -137,7 +137,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(Login.this, "ERROR AL INICIAR SESION", Toast.LENGTH_LONG).show();
+                Toast.makeText(Login.this, error.toString(), Toast.LENGTH_LONG).show();
             }
         }){
             @Override

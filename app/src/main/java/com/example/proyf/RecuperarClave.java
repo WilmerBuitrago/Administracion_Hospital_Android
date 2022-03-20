@@ -64,7 +64,7 @@ public class RecuperarClave extends AppCompatActivity {
 
 
     public void restablecer(String password){
-        String URL="http://192.168.1.6/hos/RestablecerClave.php";
+        String URL="http://192.168.1.4/hos/RestablecerClave.php";
         StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

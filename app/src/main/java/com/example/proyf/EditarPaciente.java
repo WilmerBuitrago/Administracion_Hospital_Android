@@ -99,7 +99,7 @@ public class EditarPaciente extends AppCompatActivity {
     //Funcion de editar
 
     public void editarpac(String nompac, String appac,String dirpac, String uspac,String clapac,String fechapac, String telpac){
-        String URL="http://192.168.1.6/hos/EditarPaciente.php";
+        String URL="http://192.168.1.3/hos/EditarPaciente.php";
         StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -138,7 +138,7 @@ public class EditarPaciente extends AppCompatActivity {
 
     private void elimpac(String cod){
 
-        String URL="http://192.168.1.6/hos/EliminarPaciente.php";
+        String URL="http://192.168.1.3/hos/EliminarPaciente.php";
         StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -173,7 +173,7 @@ public class EditarPaciente extends AppCompatActivity {
 
     //ver cursos
     private void verpac(){
-        String URL="http://192.168.1.6/hos/MostrarPaciente.php?id="+id;
+        String URL="http://192.168.1.3/hos/MostrarPaciente.php?id="+id;
         JsonObjectRequest jsonObjectRequest= new JsonObjectRequest(
                 Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
             @Override
